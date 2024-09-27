@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="language.css">
+<link rel="stylesheet" href="footer.css">
+
+
+
+<!-- weather -->
+ <link rel="stylesheet" href="weather.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<script src="weather.js" defer></script>
+</head>
+<body>
+<div class="back"> 
+    <nav class="navbar">
+        <div class="logo">ExploreEase</div>
+        <ul class="nav-list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#connect">Contact Us</a></li>
+        </ul>
+    </nav>
+     <div class="line1"></div>
+     <div class="quote">
+        <p>Travel is the only 
+            <br> <span1> thing you buy that</span1><br>
+             <span2>makes you richer !!</span2></p>
+     </div>
+
+</div>
+
+
+<div class="part">
+<marquee><h1> Language Translator </h1></marquee>
+</div>
+
+
+
+<!-- HTML FILE OF LANGUAGE CONVERTER -->
+
+<div class="language-body">
+    <div class="language-container">
+        <h1 style="text-align: center;margin-bottom:20px;">Language Translator</h1>
+        <div class="language-wrapper">
+            <div class="text-input">
+                <textarea class="from-text" placeholder="Enter Text"></textarea>
+                <textarea class="to-text" placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row-from li">
+                    <div class="language-icons">
+                        <i id="from" class="fas fa-volume-up"></i>
+                        <i id="from" class="fas fa-copy"></i>
+                    </div>
+                    <select class="selection">
+                        
+                    </select>
+                </li>
+                <li class="exchange li"><i class="fas fa-exchange-alt"></i></li>
+                <li class="row-to li">
+                    <select class="selection">
+                        
+                    </select>
+                    <div class="language-icons">
+                        <i id="to" class="fas fa-volume-up"></i>
+                        <i id="to" class="fas fa-copy"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="trans-btn">Translate Text</button>
+    </div>
+</div>
+
+
+<div class="part2">
+    <marquee direction="right"><h1> Search Weather </h1></marquee>
+    </div>
+
+
+<!-- WEATHER  -->
+
+<div class="weather-body">
+       
+    <div class="weather-main-container">
+        <h1 style="margin-bottom: 5px;">Search Weather</h1>
+        <header class="weather-input-container">
+            <input class="weather-city-input" placeholder="Search City">
+            <button class="weather-search-btn">
+                <span class="material-symbols-outlined" style="color: white;">
+                    search
+                    </span>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="weather-location-date-container">
+                <div class="weather-location">
+                    <span class="material-symbols-outlined" style="color: white;">
+                        location_on
+                    </span>
+                    <h4 class="weather-country-text">Jakarta</h4>
+                </div>
+                <h5 class="current-date-txt regular-txt">Thur 13 mar</h5>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="weather/clouds.svg"  class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="weather-temp-txt">29 °C</h1>
+                    <h3 class="weather-condition-txt weather-regular-txt">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="weather-condition-info">
+                        <h5 class="weather-regular-txt" style="font-weight: 300;">Humidity</h5>
+                        <h5 class="weather-humidity-value-txt"  style="font-weight: 300;">55%</h5>
+                    </div>
+                </div>
+
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                    air
+                    </span>
+                    <div class="weather-condition-info">
+                        <h5 class="weather-regular-txt" style="font-weight: 300;">Wind Speed</h5>
+                        <h5 class="weather-wind-value-txt"  style="font-weight: 300;">2 m/s</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="forecast-item-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date weather-regular-txt">
+                        01 09
+                    </h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date weather-regular-txt">
+                        01 09
+                    </h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date weather-regular-txt">
+                        01 09
+                    </h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date weather-regular-txt">
+                        01 09
+                    </h5>
+                    <img src="weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="search-city section-message">
+            <img  src="search-city.png" alt="">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the City
+                </h4>
+            </div>
+        </section>
+
+        <section class="not-found section-message" style="display: none;">
+            <img  src="not-found.png" alt="">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the City
+                </h4>
+            </div>
+        </section>
+    </div>
+
+    
+</div>
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: support@ExploreEase.com</p>
+            <p>Phone: +916478764857</p>
+        </div>
+        <div class="footer-section">
+            <h4>Support</h4>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">Help Center</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Feedback</h4>
+            <p><a href="#">Leave Feedback</a></p>
+        </div>
+        <div class="footer-section social-media">
+            <h4>Follow Us</h4>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+
+
+ <!-- LANGUAGE CONVERTER -->
+<script src="countries.js"></script>
+<script src="language.js"></script>
+
+</body>
+</html>
