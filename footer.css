@@ -1,0 +1,44 @@
+.footer {
+    background-color: rgba(1, 28, 37,1);
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #f39c12; /* Change this color for hover effect */
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon {
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f39c12; /* Change this color for hover effect */
+}
